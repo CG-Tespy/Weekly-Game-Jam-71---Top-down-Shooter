@@ -58,10 +58,10 @@
      <Compile Include="Assets\Scripts\Actors\Enemy\EnemyController.cs" />
      <Compile Include="Assets\Scripts\Actors\Enemy\MeleeEnemy.cs" />
      <Compile Include="Assets\Scripts\Actors\Enemy\RangedEnemy.cs" />
+     <Compile Include="Assets\Scripts\Actors\MortalActor2D.cs" />
      <Compile Include="Assets\Scripts\Actors\PlayerController.cs" />
      <Compile Include="Assets\Scripts\DamageOnContact2D.cs" />
      <Compile Include="Assets\Scripts\IDamageable.cs" />
-     <Compile Include="Assets\Scripts\MortalActor2D.cs" />
      <Compile Include="Assets\Scripts\ScriptableObjects\BoolVariable.cs" />
      <Compile Include="Assets\Scripts\ScriptableObjects\FloatReference.cs" />
      <Compile Include="Assets\Scripts\ScriptableObjects\FloatVariable.cs" />
@@ -83,10 +83,10 @@
      <Compile Include="Assets\Scripts\Utils\UIEvents.cs" />
      <None Include="Assets\BayatGames\Free Platform Game Assets\Readme.txt" />
  <Reference Include="UnityEditor.StandardEvents">
- <HintPath>C:/Users/Owner/Documents/Unity Projects/WeeklyGameJam71TopDownShooter/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
+ <HintPath>C:/Users/Owner/Documents/GitHub/Weedkly-Game-Jam-71---Top-down-Shooter/WeeklyGameJam71TopDownShooter/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
  </Reference>
  <Reference Include="Unity.PackageManagerUI.Editor">
- <HintPath>C:/Users/Owner/Documents/Unity Projects/WeeklyGameJam71TopDownShooter/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+ <HintPath>C:/Users/Owner/Documents/GitHub/Weedkly-Game-Jam-71---Top-down-Shooter/WeeklyGameJam71TopDownShooter/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.AIModule">
  <HintPath>C:/Program Files/Unity2018.1.8f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
