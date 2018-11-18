@@ -53,14 +53,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\Actor2D.cs" />
-     <Compile Include="Assets\Scripts\Bullet2D.cs" />
+     <Compile Include="Assets\Scripts\Actors\Actor2D.cs" />
+     <Compile Include="Assets\Scripts\Actors\Bullet2D.cs" />
+     <Compile Include="Assets\Scripts\Actors\Enemy\EnemyController.cs" />
+     <Compile Include="Assets\Scripts\Actors\Enemy\MeleeEnemy.cs" />
+     <Compile Include="Assets\Scripts\Actors\Enemy\RangedEnemy.cs" />
+     <Compile Include="Assets\Scripts\Actors\PlayerController.cs" />
      <Compile Include="Assets\Scripts\DamageOnContact2D.cs" />
-     <Compile Include="Assets\Scripts\EnemyController.cs" />
      <Compile Include="Assets\Scripts\IDamageable.cs" />
-     <Compile Include="Assets\Scripts\MeleeEnemy.cs" />
      <Compile Include="Assets\Scripts\MortalActor2D.cs" />
-     <Compile Include="Assets\Scripts\PlayerController.cs" />
      <Compile Include="Assets\Scripts\ScriptableObjects\BoolVariable.cs" />
      <Compile Include="Assets\Scripts\ScriptableObjects\FloatReference.cs" />
      <Compile Include="Assets\Scripts\ScriptableObjects\FloatVariable.cs" />

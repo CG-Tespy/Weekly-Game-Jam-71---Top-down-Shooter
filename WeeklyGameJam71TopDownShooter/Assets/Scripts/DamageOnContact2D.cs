@@ -49,6 +49,11 @@ public class DamageOnContact2D : MonoBehaviour2D
 		OnTriggerEnter2D(other);
 	}
 
+	protected override void OnCollisionEnter2D(Collision2D other)
+	{
+		base.OnCollisionEnter2D(other);
+		OnTriggerStay2D(other.collider);
+	}
 	bool ShouldDamage(GameObject other)
 	{
 		bool hasRightTag = 					contactTags.Contains(other.tag);
