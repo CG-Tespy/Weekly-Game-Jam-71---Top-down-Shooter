@@ -20,9 +20,11 @@ GameObject:
   m_Component:
   - component: {fileID: 4444541258795274}
   - component: {fileID: 212381590755204524}
-  - component: {fileID: 114411661242128388}
   - component: {fileID: 50721835927337226}
   - component: {fileID: 61015943985978088}
+  - component: {fileID: 95442544614141884}
+  - component: {fileID: 114411661242128388}
+  - component: {fileID: 114913523422987416}
   m_Layer: 9
   m_Name: MeleeEnemy
   m_TagString: Untagged
@@ -38,7 +40,7 @@ Transform:
   m_GameObject: {fileID: 1440842499986952}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -2.18, y: 0, z: 0}
-  m_LocalScale: {x: 0.05, y: 0.05, z: 1}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -79,15 +81,33 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 20.49, y: 20.48}
-    newSize: {x: 20.49, y: 20.48}
+    oldSize: {x: 5.12, y: 5.12}
+    newSize: {x: 5.12, y: 5.12}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 20.49, y: 20.48}
+  m_Size: {x: 0.3, y: 0.8}
   m_EdgeRadius: 0
+--- !u!95 &95442544614141884
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1440842499986952}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 71d8ddf2f42ee444aab6cdc08cc1dc41, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &114411661242128388
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -101,15 +121,33 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _collidersTouching: []
   _moveSpeed: 1
-  health:
+  _health:
     useSimpleValue: 1
-    simpleValue: 10
+    simpleValue: 0
     variable: {fileID: 0}
-    simpleMaxValue: 10
+    simpleMaxValue: 0
   invinTime: 0
   _target: {fileID: 0}
   bouncebackForce: 4000
   damage: 10
+--- !u!114 &114913523422987416
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1440842499986952}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3cbaa216d7dbc42418b7f4382dd276ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _collidersTouching: []
+  contactTags: []
+  contactLayers:
+    serializedVersion: 2
+    m_Bits: 256
+  damageDealt: 5
+  forceOnContact: {x: 0, y: 0, z: 0}
 --- !u!212 &212381590755204524
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -145,13 +183,13 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 21300000, guid: 48292c962abd3e946be0337bf885fd20, type: 3}
+  m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 20.49, y: 20.48}
+  m_Size: {x: 5.12, y: 5.12}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0

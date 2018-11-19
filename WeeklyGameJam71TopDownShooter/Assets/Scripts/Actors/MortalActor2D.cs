@@ -6,13 +6,18 @@ using UnityEngine.Events;
 
 public abstract class MortalActor2D : Actor2D, IDamageable<float>
 {
-	[SerializeField] FloatReference health;
+	[SerializeField] FloatReference _health;
 	[SerializeField] 
 	[Tooltip("How long (in seconds) this stays invincible when its invincibility is triggered.")]
 	float invinTime = 0;
 	float invinTimer;
 	public UnityEvent TookDamage 				{ get; set; }
 	public UnityEvent Died 						{ get; set; }
+	public FloatReference health
+	{
+		get 									{ return _health; }
+		protected set 							{ _health = value; }
+	}
 
 	public virtual bool isInvincible 			{ get; set; }
 

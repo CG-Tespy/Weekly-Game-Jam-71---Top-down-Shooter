@@ -61,6 +61,8 @@
      <Compile Include="Assets\Scripts\Actors\MortalActor2D.cs" />
      <Compile Include="Assets\Scripts\Actors\PlayerController.cs" />
      <Compile Include="Assets\Scripts\DamageOnContact2D.cs" />
+     <Compile Include="Assets\Scripts\EnemyWave.cs" />
+     <Compile Include="Assets\Scripts\EnemyWaveSequencer.cs" />
      <Compile Include="Assets\Scripts\IDamageable.cs" />
      <Compile Include="Assets\Scripts\ScriptableObjects\BoolVariable.cs" />
      <Compile Include="Assets\Scripts\ScriptableObjects\FloatReference.cs" />

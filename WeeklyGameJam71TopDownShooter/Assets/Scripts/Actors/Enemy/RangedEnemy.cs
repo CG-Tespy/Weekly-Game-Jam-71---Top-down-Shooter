@@ -41,11 +41,13 @@ public class RangedEnemy : EnemyController
 		{
 			// Fire the shot.
 			Vector2 shootDir = 			(target.position - transform.position).normalized;
-			Vector2 spawnPos = 			rigidbody.position + (shootDir * 2);
+			Vector2 spawnPos = 			rigidbody.position + shootDir;
 			Bullet2D bullet = 			Instantiate<Bullet2D>(bulletPrefab, spawnPos, Quaternion.identity);
 
-			// Make sure the bullet moves in the right direction
+			// Make sure the bullet moves in the right direction, and it on the same layer as
+			// this enemy.
 			bullet.velocity = 			shootDir;
+			bullet.gameObject.layer = 	this.gameObject.layer;
 
 			firingTimer = 				fireRate;
 		}
